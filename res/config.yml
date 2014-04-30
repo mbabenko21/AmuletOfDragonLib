@@ -1,0 +1,12 @@
+author: "Maks Babenko"
+version: "0.0.1-dev"
+env: "dev"
+SERVICES_PATH: "{const:root_dir}/res/services"
+
+DOCTRINE:
+  DB: "amulet_of_dragon"
+  PROXY_DIR: "{const:root_dir}/res/proxy/doctrine-odm"
+  PROXY_NAMESPACE: "DoctrineODM\Proxy"
+  HYDRATOR_DIR: "{const:root_dir}/res/hydrator/doctrine-odm"
+  HYDRATOR_NAMESPACE: "DoctrineODM\Hydrators"
+  DOCUMENTS_CLASSES_DIR: "{const:lib_dir}/Documents"

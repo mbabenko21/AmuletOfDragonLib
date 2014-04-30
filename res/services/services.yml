@@ -1,0 +1,15 @@
+services:
+  event_dispatcher:
+    class: "Symfony\Component\EventDispatcher\EventDispatcher"
+
+  account_service:
+    class: "AmuletOfDragon\ServicesBody\AccountServiceImpl"
+    calls:
+      - ['setDocumentManager', ["@dm"]]
+      - ['setEventDispatcher', ["@event_dispatcher"]]
+
+  token_service:
+    class: "AmuletOfDragon\ServicesBody\TokenServiceImpl"
+    calls:
+      - ['setDocumentManager', ["@dm"]]
+      - ['setEventDispatcher', ["@event_dispatcher"]]

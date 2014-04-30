@@ -1,0 +1,31 @@
+{
+    "name": "mbabenko21/amulet-of-dragon",
+    "description": "Text Online Game",
+    "minimum-stability": "stable",
+    "version": "0.0.1-dev",
+    "authors": [
+        {
+            "name": "Maks Babenko",
+            "email": "mbabenko21@gmail.com"
+        }
+    ],
+    "require":{
+        "php": ">=5.4",
+        "doctrine/mongodb-odm": "1.0.x-dev",
+        "symfony/yaml": "2.4.x-dev",
+        "symfony/dependency-injection": "2.4.x-dev",
+        "smarty/smarty": "v3.1.17",
+        "symfony/config": "2.4.x-dev",
+        "symfony/event-dispatcher": "2.4.x-dev",
+        "symfony/http-foundation": "2.4.x-dev",
+        "symfony/routing": "2.4.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmuletOfDragon\\": "lib/amulet/src/AmuletOfDragon",
+            "Game\\": "game",
+            "Tests\\": "tests",
+            "ADControllers\\": "game/controllers/ADControllers"
+        }
+    }
+}
